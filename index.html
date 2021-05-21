@@ -19,19 +19,39 @@
             padding: 0;
             float: right;
         }
-        .nav-item {
+        .nav-item-text {
             display: block;
             padding: 8px;
             float: left;
         }
+            /* Underline text on hover */
+            .nav-item-text a:hover {
+                text-decoration-line: underline;
+        }
+        .nav-item-image {
+            display: block;
+            padding: 8px;
+            float: left;
+        }
+            /* Color background on hover */
+            .nav-item-image a:hover {
+                background-color: rgb(226, 226, 226);
+        }
+        /* Removing preset underline for all hyperlinks */
+        a {
+            text-decoration-line: none;
+            color: black;
+            padding: 6px;
+        }
         
     </style>
 </head>
+<!-- Nav bar -->
 <ul id="nav-bar">
-    <li class="nav-item"><a href="https://mail.google.com/mail/?authuser=0&amp;ogbl">Gmail</a> </li>
-    <li class="nav-item"><a href="https://www.google.es/imghp?hl=en&amp;authuser=0&amp;ogbl">Images</a></li>
-    <li class="nav-item"><span class="material-icons"><a href="https://www.google.es/intl/en/about/products">grid_view</a></span></li>
-    <li class="nav-item"><img src="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo" srcset="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo 1x, https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s64-c-mo 2x " alt="" aria-hidden="true" data-noaft="" data-iml="1621344487110" data-atf="1"></li>
+    <li class="nav-item-text"><a href="https://mail.google.com/mail/?authuser=0&amp;ogbl">Gmail</a> </li>
+    <li class="nav-item-text"><a href="https://www.google.es/imghp?hl=en&amp;authuser=0&amp;ogbl">Images</a></li>
+    <li class="nav-item-image"><span class="material-icons"><a href="https://www.google.es/intl/en/about/products">grid_view</a></span></li>
+    <li class="nav-item-image"><img src="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo" srcset="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo 1x, https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s64-c-mo 2x " alt="" aria-hidden="true" data-noaft="" data-iml="1621344487110" data-atf="1"></li>
 </ul>
 <body>
     <!-- Google logo -->
