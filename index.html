@@ -5,6 +5,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <style>
+        /* Logo & search bar */
+        .logo-and-search-bar-container {
+            display: flex;
+            justify-content: center;
+        }
         #logo {
             display: flex;
             justify-content: center;
@@ -13,6 +18,7 @@
             display: flex;
             justify-content: center;
         }
+        /* Nav bar */
         #nav-bar {
             list-style-type: none;
             margin: 0;
@@ -46,14 +52,14 @@
         
     </style>
 </head>
-<!-- Nav bar -->
-<ul id="nav-bar">
-    <li class="nav-item-text"><a href="https://mail.google.com/mail/?authuser=0&amp;ogbl">Gmail</a> </li>
-    <li class="nav-item-text"><a href="https://www.google.es/imghp?hl=en&amp;authuser=0&amp;ogbl">Images</a></li>
-    <li class="nav-item-image"><span class="material-icons"><a href="https://www.google.es/intl/en/about/products">grid_view</a></span></li>
-    <li class="nav-item-image"><img src="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo" srcset="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo 1x, https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s64-c-mo 2x " alt="" aria-hidden="true" data-noaft="" data-iml="1621344487110" data-atf="1"></li>
-</ul>
 <body>
+    <!-- Nav bar -->
+    <ul id="nav-bar">
+        <li class="nav-item-text"><a href="https://mail.google.com/mail/?authuser=0&amp;ogbl">Gmail</a> </li>
+        <li class="nav-item-text"><a href="https://www.google.es/imghp?hl=en&amp;authuser=0&amp;ogbl">Images</a></li>
+        <li class="nav-item-image"><span class="material-icons"><a href="https://www.google.es/intl/en/about/products">grid_view</a></span></li>
+        <li class="nav-item-image"><img src="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo" srcset="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo 1x, https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s64-c-mo 2x " alt="" aria-hidden="true" data-noaft="" data-iml="1621344487110" data-atf="1"></li>
+    </ul>
     <!-- Google logo -->
     <div id="logo"><img alt="Google logo" height="92" width="272" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"></div>
     <!-- Search form -->
@@ -61,6 +67,6 @@
         <input type="text">
         <input type="submit" value="Google Search">
         <input type="submit" value="I'm Feeling Lucky">
-    </form> 
+    </form>
 </body>
 </html>
