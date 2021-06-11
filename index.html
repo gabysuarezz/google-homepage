@@ -16,10 +16,19 @@
         /* Nav bar */
         #nav-bar-container {
             display: flex;
-            padding: 0px;
-            align-items center;
-            font-size: 13px;
+            padding: 6px;
+            justify-content: right;
             height: 60px;
+        }
+        #nav-bar-content {
+            display: flex;
+            align-items: center;
+            font-family: Roboto, RobotoDraft, Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            height: 48px;
+            padding: 0px;
+            justify-content: right;
         }
         .nav-item-text {
             display: block;
@@ -47,7 +56,6 @@
             align-items: center;
             height: 48%;
             width: 100%;
-            grid-gap: 20px;
         }
         #logo {
             display: flex;
@@ -59,7 +67,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 48%;
             width: 100%;
             grid-gap: 20px;
         }
@@ -68,6 +75,55 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            grid-gap: 20px;
+        }
+        /* Language bar */
+        #language-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            grid-gap: 10px;
+        }
+        /* Footer */
+        #footer-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: right;
+            width: 100%;
+            grid-gap: 20px;
+        }
+        #top-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            width: 100%;
+            grid-gap: 20px;
+        }
+        #bottom-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: right;
+            width: 100%;
+            grid-gap: 20px;
+        }
+        #left-bottom-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: right;
+            width: 100%;
+            grid-gap: 20px;
+        }
+        #right-bottom-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: left;
+            width: 100%;
             grid-gap: 20px;
         }
         /* Removing preset underline for all hyperlinks */
@@ -82,11 +138,13 @@
 <body>
     <!-- Nav bar -->
     <div id="nav-bar-container">
-        <div class="nav-item-text"><a href="https://mail.google.com/mail/?authuser=0&amp;ogbl">Gmail</a> </div>
-        <div class="nav-item-text"><a href="https://www.google.es/imghp?hl=en&amp;authuser=0&amp;ogbl">Images</a></div>
-        <div class="nav-item-image"><span class="material-icons"><a href="https://www.google.es/intl/en/about/products">grid_view</a></span></div>
-        <div class="nav-item-image"><img src="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo" srcset="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo 1x, https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s64-c-mo 2x " alt="" aria-hidden="true" data-noaft="" data-iml="1621344487110" data-atf="1"></div>
-    </div>
+        <div id="nav-bar-content">
+            <div class="nav-item-text"><a href="https://mail.google.com/mail/?authuser=0&amp;ogbl">Gmail</a> </div>
+            <div class="nav-item-text"><a href="https://www.google.es/imghp?hl=en&amp;authuser=0&amp;ogbl">Images</a></div>
+            <div class="nav-item-image"><span class="material-icons"><a href="https://www.google.es/intl/en/about/products">grid_view</a></span></div>
+            <div class="nav-item-image"><img src="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo" srcset="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo 1x, https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s64-c-mo 2x " alt="" aria-hidden="true" data-noaft="" data-iml="1621344487110" data-atf="1"></div>
+        </div>
+        </div>
     <!-- Logo -->
     <div id="logo-container">
         <div id="logo"><img alt="Google logo" height="92" width="272" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"></div>
