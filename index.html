@@ -7,35 +7,19 @@
     <style>
         html,body {
             height: 100%;
-            width: 100%;
         }
-        /* Logo & search bar */
-        #main-container {
-            display: flex;
+        body {
+            font-family: arial, sans-serif;
+            font-size: 14px;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 48%;
-            width: 100%;
-            grid-gap: 20px;
-        }
-        #logo {
-            display: flex;
-            justify-content: center;
-        }
-        #search-form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            grid-gap: 20px;
         }
         /* Nav bar */
-        #nav-bar {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            float: right;
+        #nav-bar-container {
+            display: flex;
+            padding: 0px;
+            align-items center;
+            font-size: 13px;
+            height: 60px;
         }
         .nav-item-text {
             display: block;
@@ -55,6 +39,37 @@
             .nav-item-image a:hover {
                 background-color: rgb(226, 226, 226);
         }
+        /* Logo */
+        #logo-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 48%;
+            width: 100%;
+            grid-gap: 20px;
+        }
+        #logo {
+            display: flex;
+            justify-content: center;
+        }
+        /* Search bar */
+        #search-bar-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 48%;
+            width: 100%;
+            grid-gap: 20px;
+        }
+        #search-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            grid-gap: 20px;
+        }
         /* Removing preset underline for all hyperlinks */
         a {
             text-decoration-line: none;
@@ -66,16 +81,18 @@
 </head>
 <body>
     <!-- Nav bar -->
-    <ul id="nav-bar">
-        <li class="nav-item-text"><a href="https://mail.google.com/mail/?authuser=0&amp;ogbl">Gmail</a> </li>
-        <li class="nav-item-text"><a href="https://www.google.es/imghp?hl=en&amp;authuser=0&amp;ogbl">Images</a></li>
-        <li class="nav-item-image"><span class="material-icons"><a href="https://www.google.es/intl/en/about/products">grid_view</a></span></li>
-        <li class="nav-item-image"><img src="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo" srcset="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo 1x, https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s64-c-mo 2x " alt="" aria-hidden="true" data-noaft="" data-iml="1621344487110" data-atf="1"></li>
-    </ul>
-    <div id="main-container">
-        <!-- Google logo -->
+    <div id="nav-bar-container">
+        <div class="nav-item-text"><a href="https://mail.google.com/mail/?authuser=0&amp;ogbl">Gmail</a> </div>
+        <div class="nav-item-text"><a href="https://www.google.es/imghp?hl=en&amp;authuser=0&amp;ogbl">Images</a></div>
+        <div class="nav-item-image"><span class="material-icons"><a href="https://www.google.es/intl/en/about/products">grid_view</a></span></div>
+        <div class="nav-item-image"><img src="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo" srcset="https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s32-c-mo 1x, https://lh3.google.com/u/0/ogw/ADGmqu_ZyJ3X7PBhcdzRXH98jxpSyNP-i3wWwnofp8IA=s64-c-mo 2x " alt="" aria-hidden="true" data-noaft="" data-iml="1621344487110" data-atf="1"></div>
+    </div>
+    <!-- Logo -->
+    <div id="logo-container">
         <div id="logo"><img alt="Google logo" height="92" width="272" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"></div>
-        <!-- Search form -->
+    </div>
+    <!-- Search form -->
+    <div id="search-bar-container">
         <form id="search-form">
             <div>
                 <input type="text">
@@ -85,6 +102,31 @@
                 <input type="submit" value="I'm Feeling Lucky">
             </div>
         </form>
+    </div>
+    <!-- Language -->
+    <div id="language-container">
+        <div>Google offered in:</div>
+            <div>español</div>
+            <div>catala</div>
+            <div>galego</div>
+            <div>euskara</div>
+    </div>
+    <!-- Footer -->
+    <div id="footer-container">
+        <div id="top-footer">Spain</div>
+        <div id="bottom-footer">
+            <div id="left-bottom-footer">
+                <div>About</div>
+                <div>Advertising</div>
+                <div>Business</div>
+                <div>How Search works</div>
+            </div>
+            <div id="right-bottom-footer">
+                <div>Privacy</div>
+                <div>Terms</div>
+                <div>Settings</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
